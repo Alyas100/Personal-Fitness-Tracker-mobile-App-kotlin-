@@ -1,9 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme (Light and Dark Mode) -->
     <style name="Base.Theme.FinalProject" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorAccent">@color/primaryColor</item>
     </style>
 
-    <style name="Theme.FinalProject" parent="Base.Theme.FinalProject" />
+    <!-- Main Theme extending the Base Theme -->
+    <style name="Theme.FinalProject" parent="Base.Theme.FinalProject">
+        <!-- Remove default splash screen -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 </resources>

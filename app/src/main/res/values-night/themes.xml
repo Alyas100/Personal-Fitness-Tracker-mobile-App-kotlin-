@@ -1,7 +1,13 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
+    <!-- Dark mode version of the Base Theme -->
     <style name="Base.Theme.FinalProject" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorAccent">@color/primaryColor</item>
+    </style>
+
+    <!-- Dark mode version of the main theme -->
+    <style name="Theme.FinalProject" parent="Base.Theme.FinalProject">
+        <!-- Remove default splash screen -->
+        <item name="android:windowBackground">@android:color/black</item>
     </style>
 </resources>

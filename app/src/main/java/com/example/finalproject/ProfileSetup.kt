@@ -39,7 +39,7 @@ class ProfileSetup : AppCompatActivity() {
             // save to database like firebase (not implemented yet)
             } else {
                 Toast.makeText(this, "Profile Saved!", Toast.LENGTH_SHORT).show()
-                // Save data logic (e.g., SharedPreferences, Database, API call)
+                // Save data logic (SharedPreferences, Database, API call)
             }
         }
     }
