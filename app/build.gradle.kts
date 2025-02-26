@@ -6,6 +6,8 @@ plugins {
     // Add the Google services Gradle plugin
     id("com.google.gms.google-services")
 
+    // Add the Crashlytics Gradle plugin
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -41,7 +43,7 @@ android {
 }
 
 dependencies {
-    // Glide dependencies for image loading
+    // Glide dependencies for image loading (fetched from maven repository)
     implementation("com.github.bumptech.glide:glide:4.16.0")
     kapt ("com.github.bumptech.glide:compiler:4.16.0")
 
@@ -61,6 +63,10 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")  // use Firebase Firestore sdk
     implementation("com.google.firebase:firebase-storage")  // add Firebase storage sdk
     implementation("com.google.firebase:firebase-messaging")    // add notification for app
+
+    // Add the dependencies for the Crashlytics and Analytics libraries
+    implementation("com.google.firebase:firebase-crashlytics")
+    implementation("com.google.firebase:firebase-analytics")
 
 
 
